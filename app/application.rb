@@ -2,7 +2,11 @@ class Application
   def call(env)
     resp = Rack::Response.new
     req  = Rack::Request.new(env)
-    
-  end
 
+    if req.path.match(/items/<ITEM NAME>)
+      resp.write "#{item.price}"
+    else
+      resp.write "400 Item not found"
+    end
+  end
 end
