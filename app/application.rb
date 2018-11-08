@@ -9,7 +9,7 @@ class Application
       # search_term = req.params["<Item Name>"]
       # if @@items.include?(search_term)
 
-      resp.write "#{search_term.price}\n"
+      # resp.write "#{search_term.price}\n"
     # end
     else
       resp.write "404"
