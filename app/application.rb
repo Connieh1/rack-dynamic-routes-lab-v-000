@@ -14,7 +14,7 @@ class Application
       item = @@items.find{|i| i.name == item_name}
       if @@items.include?(item_name)
       resp.write item.price
-    end
+      end
     else
       resp.write "Route not found"
       resp.status = 404
