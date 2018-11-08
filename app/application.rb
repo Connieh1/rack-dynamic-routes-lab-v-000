@@ -22,7 +22,7 @@ class Application
       # resp.write "#{search_term.price}\n"
 
     else
-      resp.status = 40o
+      resp.status = 400
       resp.status = 404
       resp.write "Item not found"
       resp.write "Route not found"
