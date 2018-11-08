@@ -6,7 +6,7 @@ class Application
     if req.path.match(/items/)
       resp.write "#{item.price}"
     else
-      resp.write "400 Item not found"
+      resp.write "400 Route not found"
     end
     resp.finish
   end
