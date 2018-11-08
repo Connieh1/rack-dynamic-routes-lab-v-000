@@ -13,7 +13,7 @@ class Application
       # if @@items.include?(search_term)
 
       # resp.write "#{search_term.price}\n"
-    end
+    # end
     else
       resp.write "404"
       resp.write "Item not found"
