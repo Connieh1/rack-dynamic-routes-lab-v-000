@@ -6,12 +6,13 @@ class Application
     @@items = []
 
     if req.path.match(/items/)
-      @@items.each do |item| price
+      @@items.each do |item| 
 
       resp.write "#{item.price}\n"
+    end
     else
       resp.write "404 Route not found"
-      end
+      
     end
     resp.finish
   end
