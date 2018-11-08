@@ -9,7 +9,7 @@ class Application
 
 
 
-    if req.path.match(/items/)
+    if req.path.!match(/items/)
       # item_name =req.path.split("/items/").last
       #
       # item = @@items.find{|i| i.name == item_name}
@@ -21,7 +21,7 @@ class Application
       #
       # # resp.write "#{search_term.price}\n"
 
-    else
+    # else
       resp.write "400"
       resp.write "404"
       resp.write "Item not found"
