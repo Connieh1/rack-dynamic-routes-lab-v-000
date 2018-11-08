@@ -6,10 +6,10 @@ class Application
     @@items = []
 
     if req.path.match(/items/)
-      @@items.each do |item| 
+      @@items.each do |item|
         item.name
         resp.write "#{item.price}"
-        
+
       # search_term = req.params["<Item Name>"]
       # if @@items.include?(search_term)
 
