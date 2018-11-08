@@ -8,5 +8,6 @@ class Application
     else
       resp.write "400 Item not found"
     end
+    resp.finish
   end
 end
