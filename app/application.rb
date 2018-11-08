@@ -6,8 +6,8 @@ class Application
     @@items = []
 
     if req.path.match(/items/)
-      search_term = req.params["<Item Name>"]
-      if @@items.include?(search_term)
+      # search_term = req.params["<Item Name>"]
+      # if @@items.include?(search_term)
 
       resp.write "#{search_term.price}\n"
     end
