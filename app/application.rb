@@ -6,7 +6,7 @@ class Application
     @@items = []
 
     if req.path.match(/items/)
-      @@items.each do |item| 
+      @@items.each do |item|
 
       resp.write "#{item.price}\n"
     end
